@@ -1,0 +1,296 @@
+/* Butter Family Farms - shared styles */
+
+:root{
+  --brown-dark: #4a2f21;
+  --brown: #7b4a2d;
+  --brown-light: #c9a06b;
+  --cream: #f6ecdc;
+  --sky: #bfe3ee;
+  --sky-deep: #8fd0e3;
+  --ink: #2c1c12;
+}
+
+*{ box-sizing: border-box; }
+
+html, body{
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: var(--ink);
+  background: var(--sky);
+  min-height: 100%;
+}
+
+/* ---- animated ferris wheel background ---- */
+.ferris-bg{
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  background: linear-gradient(to bottom, var(--sky) 0%, var(--sky-deep) 60%, var(--brown-light) 100%);
+}
+
+.ferris-wheel{
+  position: absolute;
+  bottom: 6%;
+  right: 6%;
+  width: 260px;
+  height: 260px;
+  opacity: 0.35;
+}
+
+.ferris-wheel .rim{
+  position: absolute;
+  inset: 0;
+  border: 8px solid var(--brown);
+  border-radius: 50%;
+  animation: spin 18s linear infinite;
+}
+
+.ferris-wheel .rim::before,
+.ferris-wheel .rim::after{
+  content:"";
+  position:absolute;
+  background: var(--brown);
+}
+.ferris-wheel .rim::before{ /* vertical spoke */
+  left: 50%; top: 0; bottom: 0; width: 6px; margin-left: -3px;
+}
+.ferris-wheel .rim::after{ /* horizontal spoke */
+  top: 50%; left: 0; right: 0; height: 6px; margin-top: -3px;
+}
+
+.ferris-wheel .diag1, .ferris-wheel .diag2{
+  position:absolute;
+  inset: 0;
+  animation: spin 18s linear infinite;
+}
+.ferris-wheel .diag1::before{
+  content:"";
+  position:absolute;
+  top:0; left:50%; width:6px; height:100%;
+  background: var(--brown);
+  transform: translateX(-50%) rotate(45deg);
+}
+.ferris-wheel .diag2::before{
+  content:"";
+  position:absolute;
+  top:0; left:50%; width:6px; height:100%;
+  background: var(--brown);
+  transform: translateX(-50%) rotate(-45deg);
+}
+
+.ferris-wheel .cabin{
+  position:absolute;
+  width: 22px;
+  height: 22px;
+  background: var(--brown-dark);
+  border-radius: 4px;
+  animation: spin 18s linear infinite;
+}
+.ferris-wheel .cabin span{
+  position:absolute;
+  display:block;
+  width: 22px;
+  height: 22px;
+  background: var(--cream);
+  border: 3px solid var(--brown-dark);
+  border-radius: 4px;
+  animation: counter-spin 18s linear infinite;
+}
+.ferris-wheel .c1{ top: -11px; left: 50%; margin-left: -11px; }
+.ferris-wheel .c2{ top: 50%; left: -11px; margin-top: -11px; }
+.ferris-wheel .c3{ top: 50%; right: -11px; margin-top: -11px; }
+.ferris-wheel .c4{ bottom: -11px; left: 50%; margin-left: -11px; }
+.ferris-wheel .c5{ top: 18%; left: 15%; }
+.ferris-wheel .c6{ top: 18%; right: 15%; }
+.ferris-wheel .c7{ bottom: 18%; left: 15%; }
+.ferris-wheel .c8{ bottom: 18%; right: 15%; }
+
+.ferris-wheel .stand{
+  position:absolute;
+  bottom: -50px;
+  left: 50%;
+  width: 4px;
+  height: 60px;
+  background: var(--brown-dark);
+  transform-origin: bottom center;
+}
+.ferris-wheel .stand.left{ transform: translateX(-50%) rotate(18deg); left: 42%; }
+.ferris-wheel .stand.right{ transform: translateX(-50%) rotate(-18deg); left: 58%; }
+
+@keyframes spin{
+  from{ transform: rotate(0deg); }
+  to{ transform: rotate(360deg); }
+}
+@keyframes counter-spin{
+  from{ transform: rotate(0deg); }
+  to{ transform: rotate(-360deg); }
+}
+
+/* ---- layout ---- */
+.wrap{
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px 60px;
+}
+
+header.site-header{
+  background: var(--cream);
+  border-bottom: 6px solid var(--brown);
+  padding: 18px 20px;
+}
+
+.header-inner{
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.header-inner img.logo{
+  height: 90px;
+  width: auto;
+}
+
+.site-title h1{
+  margin: 0;
+  font-size: 1.8rem;
+  color: var(--brown-dark);
+}
+.site-title p{
+  margin: 4px 0 0;
+  font-style: italic;
+  color: var(--brown);
+}
+
+nav.site-nav{
+  background: var(--brown-dark);
+}
+nav.site-nav ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+nav.site-nav a{
+  display: block;
+  padding: 12px 18px;
+  color: var(--cream);
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+}
+nav.site-nav a:hover, nav.site-nav a.active{
+  background: var(--brown);
+  color: #fff;
+}
+
+main{
+  background: rgba(246, 236, 220, 0.94);
+  margin-top: 24px;
+  padding: 28px 32px;
+  border: 3px solid var(--brown);
+  border-radius: 6px;
+}
+
+main h2{
+  color: var(--brown-dark);
+  border-bottom: 3px solid var(--sky-deep);
+  padding-bottom: 8px;
+}
+
+a{ color: var(--brown-dark); }
+
+footer.site-footer{
+  text-align: center;
+  padding: 20px;
+  color: var(--brown-dark);
+  font-size: 0.9rem;
+}
+
+.badge{
+  display: inline-block;
+  background: var(--sky-deep);
+  color: var(--brown-dark);
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+.construction{
+  background: repeating-linear-gradient(
+    45deg,
+    #f6d365,
+    #f6d365 12px,
+    var(--brown-dark) 12px,
+    var(--brown-dark) 24px
+  );
+  color: #fff;
+  text-align: center;
+  padding: 14px;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.card-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.card{
+  background: #fff;
+  border: 2px solid var(--brown-light);
+  border-radius: 6px;
+  padding: 16px;
+}
+.card h3{
+  margin-top: 0;
+  color: var(--brown-dark);
+}
+.card .price{
+  font-weight: bold;
+  color: var(--brown);
+  font-size: 1.1rem;
+}
+
+.job{
+  border-left: 5px solid var(--sky-deep);
+  padding: 10px 16px;
+  margin-bottom: 20px;
+  background: #fff;
+}
+.job h3{
+  margin-bottom: 4px;
+  color: var(--brown-dark);
+}
+.job .meta{
+  font-size: 0.9rem;
+  color: var(--brown);
+  margin-bottom: 8px;
+}
+
+.btn{
+  display: inline-block;
+  background: var(--brown);
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.btn:hover{
+  background: var(--brown-dark);
+}
