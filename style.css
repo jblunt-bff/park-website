@@ -294,3 +294,9 @@ footer.site-footer{
 .btn:hover{
   background: var(--brown-dark);
 }
+
+@media (max-width: 600px){
+  .header-inner{ flex-direction: column; text-align: center; }
+  nav.site-nav ul{ justify-content: center; }
+  .ferris-wheel{ width: 160px; height: 160px; right: 4%; bottom: 4%; }
+}
