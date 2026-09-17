@@ -20,17 +20,20 @@
 <circle cx="290" cy="165" r="46" fill="url(#ig)"/>
 <circle cx="290" cy="165" r="41" fill="#fff"/>
 <g clip-path="url(#avatar)"><rect x="250" y="125" width="80" height="80" fill="#fbe7a1"/><g transform="translate(252,130)"><use xlink:href="#pb" transform="scale(0.26)"/></g></g>
-<text x="370" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#222">6</text>
+<text x="370" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#222">0</text>
 <text x="370" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#555">posts</text>
-<text x="435" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#222">412</text>
-<text x="435" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#555">followers</text>
+<text x="435" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#222">0</text>
+<text x="435" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#555">likes</text>
 <text x="220" y="232" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#222">Party Butter &#129480;</text>
-<text x="220" y="252" font-family="Arial, sans-serif" font-size="12" fill="#333">Official mascot @ Butter Family Farms</text>
-<text x="220" y="270" font-family="Arial, sans-serif" font-size="12" fill="#333">Dislikes: margarine, lukewarm funnel</text>
-<text x="220" y="286" font-family="Arial, sans-serif" font-size="12" fill="#333">cake &amp; people who don't put trays away</text>
+<text x="220" y="256" font-family="Arial, sans-serif" font-size="13" fill="#333">Your BFF from Sandwich, ILlinois!</text>
+<text x="220" y="276" font-family="Arial, sans-serif" font-size="13" fill="#333">The Butter Family Farms Mascot.</text>
 <rect x="220" y="298" width="230" height="24" rx="6" fill="#0095f6"/>
 <text x="335" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#fff">Follow</text>
-<rect x="212" y="330" width="80" height="80" fill="#8fd0e3"/><rect x="245" y="340" width="14" height="64" fill="#c9a06b" stroke="#4a2f21" stroke-width="2"/><rect x="237" y="352" width="30" height="10" fill="#f1c40f" stroke="#4a2f21" stroke-width="2"/><rect x="294" y="330" width="80" height="80" fill="#fdebd3"/><circle cx="334" cy="372" r="20" fill="#c0392b" stroke="#4a2f21" stroke-width="2"/><path d="M314 372 q20 10 40 0 v-6 q-20 -10 -40 0z" fill="#c68642"/><rect x="376" y="330" width="80" height="80" fill="#9ccc65"/><rect x="394" y="360" width="40" height="22" fill="#e74c3c" stroke="#4a2f21" stroke-width="2"/><circle cx="402" cy="388" r="12" fill="#333"/><circle cx="432" cy="388" r="7" fill="#333"/><rect x="212" y="412" width="80" height="80" fill="#f8c8dc"/><text x="252" y="466" text-anchor="middle" font-size="40" fill="#d62976">&#9829;</text><rect x="294" y="412" width="80" height="80" fill="#bfe3ee"/><circle cx="334" cy="454" r="24" fill="none" stroke="#7b4a2d" stroke-width="4"/><line x1="334" y1="454" x2="334" y2="480" stroke="#7b4a2d" stroke-width="4"/><rect x="376" y="412" width="80" height="80" fill="#fff4cc"/><polygon points="416,428 398,480 434,480" fill="#3498db" stroke="#4a2f21" stroke-width="2"/>
+<line x1="212" y1="332" x2="458" y2="332" stroke="#dbdbdb" stroke-width="1"/>
+<circle cx="335" cy="420" r="34" fill="none" stroke="#222" stroke-width="3"/>
+<rect x="317" y="407" width="36" height="26" rx="5" fill="none" stroke="#222" stroke-width="3"/>
+<circle cx="335" cy="420" r="7" fill="none" stroke="#222" stroke-width="3"/>
+<text x="335" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#222">No Posts Yet</text>
 <!-- PB popping out -->
 <g transform="translate(540,170) rotate(6 199.8 177.525)"><use xlink:href="#pb" transform="scale(1.35)"/></g>
 <g font-size="44" fill="#d62976" font-family="Arial, sans-serif">
