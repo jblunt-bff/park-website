@@ -322,6 +322,20 @@ footer.site-footer{
 .news-article{ line-height: 1.6; }
 .news-article h2{ margin-bottom: 6px; }
 .back-link{ margin-top: 0; }
+.news-photo{ margin: 16px 0 20px; }
+.news-photo img{
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 3px solid var(--brown-light);
+  border-radius: 6px;
+}
+.news-photo figcaption{
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--brown);
+  margin-top: 6px;
+}
 .media-contact{
   margin-top: 28px;
   padding-top: 12px;
